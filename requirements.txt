@@ -1,0 +1,4 @@
+cffi==1.15.1
+protobuf==4.21.12
+pycparser @ file:///private/tmp/pycparser-20230831-6050-10bkury/pycparser-2.21
+PyYAML==6.0.1
