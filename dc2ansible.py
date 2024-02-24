@@ -39,7 +39,7 @@ def generate_playbook(service_name, service_config, output_dir):
         f"        image: {service_config['image']}"
     ]
 
-    for section in ['command', 'ports', 'networks', 'volumes', 'labels']:
+    for section in ['command', 'ports', 'networks', 'volumes', 'labels', 'environment']:
         if section in service_config:
             playbook_content.append(f"        {section}:")
             if isinstance(service_config[section], list):
